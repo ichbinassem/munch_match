@@ -1,0 +1,110 @@
+.modal-container .post {
+  display: none;
+}
+
+.modal-container .text {
+  font-size: 24px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.modal-container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal-container .edit:hover {
+  text-decoration: underline;
+}
+
+.modal-container .review input {
+  display: none;
+}
+
+.review label {
+  font-size: 40px;
+  color: #e8bcbc;
+  padding: 10px;
+  float: right;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: pointer;
+}
+
+.review .hearts {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: #c91818;
+}
+
+input:checked ~ label {
+  color: #c91818;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* input#rate-5:checked ~ label {
+  color: #e8bcbc;
+  text-shadow: 0 0 1px #c91818;
+} */
+
+input:checked ~ form header:before {
+  color: white;
+}
+
+input#rate-1:checked ~ form header:before {
+  content: "This dish was bad 😠";
+}
+
+input#rate-2:checked ~ form header:before {
+  content: "This dish was meh 😕";
+}
+
+input#rate-3:checked ~ form header:before {
+  content: "This dish was okay 🙂";
+}
+
+input#rate-4:checked ~ form header:before {
+  content: "This dish was good 😋";
+}
+
+input#rate-5:checked ~ form header:before {
+  content: "This dish was great! 🤩";
+}
+
+.container form {
+  display: none;
+}
+
+input:checked ~ form {
+  display: block;
+}
+
+.modal-container button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #a5a5a5;
+  outline: none;
+  background: #eb5353;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-container button:hover {
+  background: #c91818;
+}

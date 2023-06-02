@@ -1,0 +1,53 @@
+{% extends "base_dashboard.html" %}
+{% block title %} Swipe Page {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/swipe.css">
+<link rel="stylesheet" type="text/css" href="/static/css/new_meal.css"> 
+{% endblock %} 
+
+{% block content %}
+<div class="modal-container" id="add_new_dish_modal">
+  <div class="modal">
+    <form id="new_dish_form">
+      <div class="title">Add a new dish here!</div>
+      <div class="input-block">
+        <span>Dish</span>
+        <input placeholder="What is this dish called?" name="name" />
+      </div>
+      <div class="input-block">
+        <span>Price</span>
+        <div class="price">
+          <span>$</span>
+          <input
+            type="number"
+            placeholder="How much does it cost?"
+            name="price">
+        </div>
+      </div>
+      <div class="input-block">
+        <span>Address</span>
+        <input
+          placeholder="Where can we find this dish?"
+          id="location_input_new_meal"
+          name="location">
+      </div>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</div>
+<div class="swiper-container">
+  <ion-icon id="swipe_forward" name="checkmark-circle"></ion-icon>
+  <div id="swipper"></div>
+  <ion-icon id="swipe_backward" name="close-circle"></ion-icon>
+  <div class="new">
+    <button class="new_dish" id="new_dish">Add a new dish</button>
+  </div>
+</div>
+
+<script src="/static/js/swipe/dish.js"></script>
+<script src="/static/js/swipe/script.js" type="module"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+{% endblock %}

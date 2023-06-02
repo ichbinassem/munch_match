@@ -1,0 +1,41 @@
+.munch {
+  color: black;
+}
+.match {
+  color: #f2cf53;
+}
+
+nav {
+  background-color: #c91818;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transform: perspective(1px) translateZ(0);
+  transition: 0.3s;
+}
+
+nav a::before {
+  background: #f2cf53;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+nav a:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+
+nav a:hover {
+  color: #f2cf53;
+  box-shadow: 0 0 0 10px rgba(200, 200, 200, 0.2);
+}
+
+nav a:first-child {
+  font-size: 20px;
+}

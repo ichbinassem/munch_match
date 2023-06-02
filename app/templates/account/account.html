@@ -1,0 +1,45 @@
+{% extends "base_dashboard.html" %} {% block title %} My Account {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/account.css" />
+{% endblock %} {% block content %}
+<div class="account-main-container">
+  <div class="account-container">
+    <h2>Account Information</h2>
+
+    <div class="block">
+      <div class="sub-block">
+        <span class="main-text" id="main-name-value">{{user.name}}</span>
+        <span id="main-email-value">{{user.email}}</span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="sub-block secondary">
+        <span class="title"> Name </span>
+        <span id="name-value">{{user.name}}</span>
+        <input
+          value="{{user.name}}"
+          id="edit-name-input"
+          type="text"
+          class="hidden"
+        />
+      </div>
+      <button id="edit-name-button">Edit</button>
+    </div>
+    <div class="block">
+      <div class="sub-block secondary">
+        <span class="title"> Email Address </span>
+        <span id="email-value">{{user.email}}</span>
+        <input
+          value="{{user.email}}"
+          id="edit-email-input"
+          type="text"
+          class="hidden"
+        />
+      </div>
+      <button id="edit-email-button">Edit</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/account/account.js" type="module"></script>
+{% endblock %}

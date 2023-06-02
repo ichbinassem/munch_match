@@ -1,0 +1,56 @@
+{% extends "base_dashboard.html" %} {% block title %} Swipe Page {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/munches.css">
+<link rel="stylesheet" type="text/css" href="/static/css/reviews.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %} 
+{% block content %}
+<div class="modal-container">
+  <div class="review">
+    <div class="hearts">
+      <input type="radio" name="rating" id="rate-5">
+      <label for="rate-5" class="fa fa-heart"></label>
+      <input type="radio" name="rating" id="rate-4">
+      <label for="rate-4" class="fa fa-heart"></label>
+      <input type="radio" name="rating" id="rate-3">
+      <label for="rate-3" class="fa fa-heart"></label>
+      <input type="radio" name="rating" id="rate-2">
+      <label for="rate-2" class="fa fa-heart"></label>
+      <input type="radio" name="rating" id="rate-1">
+      <label for="rate-1" class="fa fa-heart"></label>
+    </div>
+    <button id="review-submit">SUBMIT</button>
+  </div>
+</div>
+<h2>Your Munch Matches</h2>
+
+<div class="dishes-container">
+  {% for match in matches %}
+  <div class="matched_dish" id="{{match.id}}">
+    <div class="img-container">
+      <img src="{{match.picture}}" alt="{{ match.name }}" class="munch-image">
+    </div>
+    <div class="info">
+      <div class="text">
+        <h3>{{ match.name }}</h3>
+        <p>${{ match.price }}</p>
+        <span>{{ match.location }}</span>
+        <span class="rating-text">{{'★' * match.rate }}</span>
+      </div>
+      <div class="actions">
+        <button id="review-{{match.id}}" class="review-btn">
+          Add a Review
+        </button>
+        <button class="delete-btn">Delete</button>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<script src="/static/js/munches/munches.js" type="module"></script>
+<script src="/static/js/meals/reviews.js" type="module"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+{% endblock %}

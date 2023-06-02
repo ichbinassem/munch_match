@@ -1,0 +1,172 @@
+.navigation {
+  width: 100%;
+  background-color: #c91818;
+}
+
+.menu {
+  top: 44px;
+}
+.page {
+  color: white;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+.login {
+  width: 50%;
+  float: right;
+  top: 20px;
+}
+
+.text {
+  color: #c91818;
+  width: 100%;
+  height: 53px;
+
+  text-align: left;
+  font-size: 45px;
+  margin-top: 20%;
+}
+
+.log_in_button {
+  width: 557px;
+  height: 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(
+    235.0000011920929,
+    83.00000265240669,
+    83.00000265240669,
+    1
+  );
+  border: 1px;
+  border-style: ridge;
+}
+
+.sign_up_button {
+  width: 557px;
+  height: 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #a5a5a5;
+  border: 1px;
+}
+
+.text2 {
+  width: 53px;
+  height: 27px;
+  left: 252px;
+  top: 19px;
+
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: white;
+}
+
+.input_box {
+  width: 557px;
+  height: 65px;
+  top: 34px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px;
+  border-color: #a5a5a5;
+  border-style: ridge;
+}
+
+.text1 {
+  color: rgba(0, 0, 0, 1);
+  width: 93px;
+  height: 27px;
+  left: 2px;
+
+  text-align: center;
+  font-size: 18px;
+}
+
+.forgot {
+  color: #a5a5a5;
+  width: 161px;
+  height: 27px;
+
+  font-size: 18px;
+}
+
+.or {
+  width: 557px;
+  text-align: center;
+  border-bottom: 1px solid #a5a5a5;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.or span {
+  background: #fff;
+  padding: 0 10px;
+  color: black;
+}
+
+.visuals {
+  background-color: #f2cf53;
+  width: 40%;
+  float: left;
+  top: 40px;
+  height: 100%;
+}
+
+.food {
+  width: 90%;
+  height: 350px;
+  margin-left: 5%;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background-image: url(food.jpg);
+  margin-top: 25%;
+}
+
+.no {
+  width: 100px;
+  height: 100px;
+  left: 22%;
+  top: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  border-bottom-right-radius: 360px;
+  background-image: url(x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #a5a5a5;
+}
+
+.yes {
+  width: 100px;
+  height: 100px;
+  left: 8%;
+  top: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  border-bottom-right-radius: 360px;
+  background-image: url(check.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text3 {
+  color: rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 35px;
+  width: 100%;
+  top: 75%;
+  background-color: #f2cf53;
+}

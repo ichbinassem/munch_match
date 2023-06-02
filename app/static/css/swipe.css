@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  font-size: 17px;
+}
+
+.munch {
+  color: black;
+}
+.match {
+  color: #f2cf53;
+}
+
+.ingredients-button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5em;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-30%, -10%);
+}
+
+.ingredients-button::before {
+  content: "";
+  background-image: url("/static/info2.png"); /* Replace this with the path to your icon image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+}
+
+.ingredients-container {
+  padding: 30px;
+  margin: 20px;
+}
+
+.info-container {
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 4%;
+  font-size: 24px;
+}
+
+.maps-button {
+  color: black;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.maps-button:hover {
+  text-decoration: underline;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#swipper {
+  height: 80vh;
+  aspect-ratio: 1;
+  perspective: 500px;
+  perspective-origin: center 50%;
+  transform-style: preserve-3d;
+  position: relative;
+  display: auto;
+}
+
+#swipe_forward,
+#swipe_backward {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+#swipe_forward {
+  right: 10%;
+  display: inline-block;
+}
+
+#swipe_backward {
+  left: 10%;
+  display: inline-block;
+}
+
+.dish {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  border-radius: 45px;
+  overflow: hidden;
+  transform: translateZ(calc(-70px * var(--i)))
+    translateY(calc(-20px * var(--i))) rotate(calc(-9deg * var(--i)));
+  border: 1px solid black;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.5s;
+  padding: 2em;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.rate-container div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.6em;
+}
+
+.rate-container .rating {
+  font-size: 0.6em;
+  overflow: visible;
+}
+
+.dish img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: 70% 50%;
+  padding: 0px;
+  border-radius: 22.5px;
+  border: 2px solid #222;
+  margin-top: 5%;
+}
+
+#swipe_forward.trigger,
+#swipe_backward.trigger {
+  animation-name: animation2;
+}
+
+#swipe_forward {
+  color: #57b440;
+  background-color: transparent;
+}
+
+#swipe_backward {
+  color: #f44336;
+  background-color: transparent;
+}
+
+.img-container {
+  height: 70%;
+}
+
+.new {
+  position: absolute;
+  object-position: 50%;
+  top: 87%;
+  width: 38%;
+  height: 30%;
+}
+
+.new_dish {
+  border: 1px solid #a5a5a5;
+  outline: none;
+  background: #e5e5e5;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 20%;
+}
+
+.new_dish:hover {
+  background-color: #a5a5a5;
+}
+
+@keyframes animation1 {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation2 {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

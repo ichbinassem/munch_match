@@ -1,0 +1,85 @@
+.preferences-main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.preferences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  margin: auto;
+  width: 35%;
+  gap: 2em;
+}
+
+.preferences-container h2 {
+  font-weight: 600;
+  color: #c91818;
+}
+
+.preferences-container input {
+  border: 1px solid #a5a5a5;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+
+.preferences-container .block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.preferences-container .block .slider {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.preferences-container .block .slider input {
+  flex: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.preferences-container .block .pills {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.preferences-container .block .pills div {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.2em 0.9em;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.preferences-container .block .pills div.selected {
+  background-color: #93cf85;
+}
+
+.preferences-container .block .pills div img {
+  height: 15px;
+}

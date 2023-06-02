@@ -1,0 +1,36 @@
+{% extends "base_dashboard.html" %} {% block title %} Review {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/reviews.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ {%
+    endblock %}
+{% block content %}
+<div class = container>
+    <div class = "post">
+        <div class = "text">Thank you for the review!</div>
+        <div class = "edit">EDIT</div>
+    </div>
+    <div class = "review">
+        <input type = "radio" name = "rating" id = "rate-5">
+        <label for = "rate-5" class = "fa fa-heart"></label>
+        <input type = "radio" name = "rating" id = "rate-4">
+        <label for = "rate-4" class = "fa fa-heart"></label>
+        <input type = "radio" name = "rating" id = "rate-3">
+        <label for = "rate-3" class = "fa fa-heart"></label>
+        <input type = "radio" name = "rating" id = "rate-2">
+        <label for = "rate-2" class = "fa fa-heart"></label>
+        <input type = "radio" name = "rating" id = "rate-1">
+        <label for = "rate-1" class = "fa fa-heart"></label>
+        <form action = "#">
+            <header></header>
+            <div class ="textarea">
+                <textarea cols = "30" placeholder="Tell us more!"></textarea>
+            </div>
+            <div class = "rate">
+                <button type = "submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/static/js/swipe/reviews.js"></script>
+{% endblock %}
