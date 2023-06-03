@@ -8,7 +8,7 @@ export async function getImageFromGoogleImages(
   const encodedQuery = encodeURIComponent(query);
    // Send an HTTP GET request to the Google Custom Search API to search for images
   const response = await get(
-    `https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBBUaCVVNYenmnVL6olLHUFT4A1kfpkd-I&cx=03118f9400a2e4171&q=${encodedQuery}&searchType=image`,
+    `APIkey`,
     true,
     stopLoading,
     createLoading
