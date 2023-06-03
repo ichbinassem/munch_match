@@ -1,6 +1,9 @@
-# Tinder for Food 12:30
+# Munch Match
+
+Munch Match is a food matching service, which helps hungry customers find restaurants and meals of their choice based on distance proximity and dietary preferences. 
 
 Link for demo: https://www.loom.com/share/392bc8bf72fa45a5bdfb9776304016d0
+
 
 ## Project Structure
 
